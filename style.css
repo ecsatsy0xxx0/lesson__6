@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Flame";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local("Flame-Regular"),
+        url(fonts/Flame-Regular.eit) format("eot"),
+        url(fonts/Flame-Regular.ttf) format("ttf"),
+        url(fonts/Flame-Regular.woff) format("woff"),
+        url(fonts/Flame-Regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+.head{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.head__log img{
+    width: 100px;
+    height: 100px;
+}
+.head__name{
+    color: white;
+    font-size: 50px;
+    font-family: "Flame";
+}
+.head__nav ul {
+    color: white;
+    font-family: "Flame";
+    flex-direction: column;
+}
+.head__nav li {
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+ol{
+    padding-left: 70px;
+}
+body{
+    font-family: "Flame";
+}
+
+.head__h1{
+    padding: 20px 0 0 20px;
+    font-size: 4em;
+}
+.head__p{
+    padding: 20px 0 0 20px;
+    font-size: 2em;
+}
+.main__link {
+    font-family: "Flame";
+    padding: 0 0 0 50px ;
+    font-size: 20px;
+}
+
+.price{
+    font-size: 30px;
+}
+
+.calculator{
+    padding: 20px 0 0 20px;
+    font-size: 2em;
+}
+
+#calculator__intput{
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(219, 218, 218);
+    font-size: 23px;
+}
+#calculator__select{
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(219, 218, 218);
+    font-size: 23px;
+    font-family: "Flame";
+}
+#calculator__cl{
+    font-family: "Flame";
+}
+
+#submit{
+    padding: 8px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 20px 0 0 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+label {
+    margin-bottom: 5px;
+}
+input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.head__pb{
+    font-size: 20px;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    font-family: "Flame";
+}
+
+#result{
+    font-size: 25px;
+}
+
+.main__p{
+    font-size: 20px;
+}
+
+#option{
+    font-family: "Flame";
+    border-width: 2px;
+    background-color: rgb(219, 218, 218);
+}
+
+#deliveryType{
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(219, 218, 218);
+    font-size: 23px;
+    font-family: "Flame";
+}

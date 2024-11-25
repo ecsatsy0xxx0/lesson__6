@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ex.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>JavaScript_1</title>
+</head>
+<body>
+    <header class="head">
+        <div class="head__log">
+            <img src="./ex.png" alt="ex">
+        </div>
+        <div class="head__name">
+            Online store
+        </div>
+        <nav class="head__nav">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Услуги</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>        
+            <h1 class="head__h1">Здраствуй дорогой покупатель!</h1>
+            <p class="head__p">Вот список товаров и их цена:</p> 
+            <br>
+        </section>
+
+        <section>
+            <div class="main__link">
+                </ul class="main__ul">
+                    <li>
+                        Видеокарта Palit NVIDIA GeForce RTX 4060TI RTX4060Ti JETSTREAM 16ГБ JetStream, GDDR6, Ret [ne6406t019t1-1061j]: <q class="price"> 55 970₽ </q>
+                    </li>
+                    <li>
+                        Серверная материнская плата Supermicro X12DPi-N6, OEM [mbd-x12dpi-n6-b]: <q class="price"> 156 000₽ </q>
+                    </li>
+                    <li>
+                        Блок питания Aerocool VX PLUS 750W, 750Вт, 120мм, черный, retail [vx-750 plus]: <q class="price"> 5890₽ </q>
+                    </li>
+                    <li>
+                        Процессор для серверов Intel Xeon Platinum 8276 2.2ГГц [cd8069504195501]: <q class="price"> 409 990₽ </q>
+                    </li>
+                    <li>
+                        Устройство охлаждения(кулер) JONSBO CR-1000 Evo, 120мм, Ret: <q class="price"> 2740₽ </q>
+                    </li>
+                    <li>
+                        Оперативная память Kingston Fury Renegade Pro Black XMP KF568R34RB-16 DDR5 - 1x 16ГБ 6800МГц, DIMM, ECC, Ret: <q class="price"> 13 990₽ </q>
+                    </li>
+                    <li>
+                        Жесткий диск Seagate Barracuda ST4000LM024, 4ТБ, HDD, SATA III, 2.5": <q class="price"> 15 990₽ </q>
+                    </li>
+                    <li>
+                        Мышь Logitech G Pro, игровая, оптическая, беспроводная, USB, черный [910-005272]: <q class="price"> 13 610₽ </q>
+                    </li>
+                    <li>
+                        Клавиатура Oklick 969G SHOTGUN, USB, черный [1176616]: <q class="price"> 2289₽ </q>
+                    </li>
+                    <li>
+                        Монитор Xiaomi Redmi Monitor G34WQ 34" чёрный с регулируемым наклоном и высотой (C34WQBA-RG): <q class="price"> 24 990₽</q>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>        
+            <p class="head__p">Выберите товар из списка и укажите количество товара:</p> 
+            <div class="calculator">
+                    <label for="quantity" >Количество товара:</label> <br>
+                    <input type="number" value="1" id="calculator__intput"> <br>
+            
+                    <label for="product">Товар:</label><br>
+                    <select value="1" id="calculator__select">
+                        <option>Выберите товар</option>
+                        <option value="55970">Видеокарта Palit NVIDIA GeForce RTX 4060TI RTX4060Ti JETSTREAM 16ГБ JetStream, GDDR6, Ret [ne6406t019t1-1061j]</option>
+                        <option value="156000">Серверная материнская плата Supermicro X12DPi-N6, OEM [mbd-x12dpi-n6-b]</option>
+                        <option value="5890">Блок питания Aerocool VX PLUS 750W, 750Вт, 120мм, черный, retail [vx-750 plus]</option>
+                        <option value="409990">Процессор для серверов Intel Xeon Platinum 8276 2.2ГГц [cd8069504195501]</option>
+                        <option value="2740">Устройство охлаждения(кулер) JONSBO CR-1000 Evo, 120мм, Ret</option>
+                        <option value="13990">Оперативная память Kingston Fury Renegade Pro Black XMP KF568R34RB-16 DDR5 - 1x 16ГБ 6800МГц, DIMM, ECC, Ret</option>
+                        <option value="15990">Жесткий диск Seagate Barracuda ST4000LM024, 4ТБ, HDD, SATA III, 2.5"</option>
+                        <option value="13610">Мышь Logitech G Pro, игровая, оптическая, беспроводная, USB, черный [910-005272]</option>
+                        <option value="2289">Клавиатура Oklick 969G SHOTGUN, USB, черный [1176616]</option>
+                        <option value="24990">Монитор Xiaomi Redmi Monitor G34WQ 34" чёрный с регулируемым наклоном и высотой (C34WQBA-RG)</option>
+                    </select> <br>
+                    <div id="terra">Выберите тип доставки:</div><br>
+                    <select id="deliveryType">
+                        <option value="noDelivery">Без доставки</option>
+                        <option value="withinRUS">На территории РФ</option>
+                        <option value="abroad">За границу</option>
+                    </select><br>
+    
+                    <div id="radios" style="display: none;">
+                        <input type="radio" name="serviceType" value="none"> Не выбирать<br>
+                        <input type="radio" name="serviceType" value="europe"> Европа<br>
+                        <input type="radio" name="serviceType" value="china"> Китай<br>
+                        <input type="radio" name="serviceType" value="america"> Америка<br>
+                    </div>
+                    <button id="submit"><p class="head__pb">Посчитать стоимость</p></button>
+                    <div id="result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text">(c) Моисеев Ратмир</div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
